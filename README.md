@@ -22,5 +22,5 @@ python login.py
 - Secure password hashing using SHA-256.
 - User registration and login with error handling for duplicate usernames.
 - Simple user interface for easy interaction.
-check out our detailed guide in [my blog post]([https://www.example.com/my-blog-post](https://www.ramzitech.be/2023/07/building-secure-user-authentication.html)https://www.ramzitech.be/2023/07/building-secure-user-authentication.html).
+- check out our detailed guide in [my blog post]([https://www.ramzitech.be/2023/07/building-secure-user-authentication.html]).
 
