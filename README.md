@@ -6,13 +6,23 @@ This is a simple user authentication system built with Python and MariaDB for se
 
 1. Clone this repository to your local machine.
 - git clone https://github.com/Ramziafa/secure-login-system.git
-3. Install the required dependencies:
+2. Install the required dependencies:
 - pip install mysql-connector-python
 
-4. Ensure you have MariaDB installed and running.
-5. Create a database named "user_auth" in your MariaDB instance.
-6. Edit the Python script (`login.py`) with your MariaDB username and password to establish a connection to the database.
-7. Run the Python script to start the user interface:
+3. Ensure you have MariaDB installed and running.
+4. Create a database named "user_auth" in your MariaDB instance:
+```sql
+CREATE DATABASE user_auth;
+USE user_auth;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL
+);
+```
+5. Edit the Python script (`login.py`) with your MariaDB username and password to establish a connection to the database.
+6. Run the Python script to start the user interface:
 - python login.py
 
 
